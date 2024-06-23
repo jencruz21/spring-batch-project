@@ -1,4 +1,4 @@
-package com.jencruz.service;
+package com.jencruz.config;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobParameter;
@@ -10,13 +10,13 @@ import org.springframework.batch.core.repository.JobInstanceAlreadyCompleteExcep
 import org.springframework.batch.core.repository.JobRestartException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
+@Component
 public class JobSchedulerService {
 
     private final JobLauncher jobLauncher;
